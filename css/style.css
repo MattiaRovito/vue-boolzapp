@@ -23,7 +23,10 @@ body
     margin: 0 auto;
 }
 
-
+.flex
+{
+    display: flex;
+}
 
 
 
@@ -41,7 +44,6 @@ body
 {
     background-color: rgb(237, 237, 237);
     height: 70px;
-    display: flex;
     padding: 10px;
     border-right: 1px solid rgb(204, 204, 204);
 }
@@ -81,24 +83,30 @@ body
     background: rgb(138, 211, 241);
     height: 80px;
     padding: 10px;
-    display: flex;
-
 }
 
 .notifiche i
 {
     font-size: 30px;
-    background-color: #f2fbff;
+    background-color: rgb(242, 251, 255);
     border-radius: 50%;
     color: rgb(138, 211, 241);
     padding: 12px;
-    line-height: 35px;
+    margin-right: 5px;
 }
 
 
+.notifiche-text a
+{
+    font-size: 14px;
+    color: rgb(79, 116, 147);
+}
 
-
-
+.notifiche-text
+{
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 
