@@ -108,17 +108,32 @@ body
     flex-wrap: wrap;
 }
 
+.search
+{
+    height: 50px;
+    background-color: rgb(250, 250, 250);
+}
 
+.lens
+{
+    padding: 5px;
+    width: 90%;
+}
 
+.lens i
+{
+    font-size: 20px;
+    border: 1px solid rgb(212, 212, 212);
+    color: rgb(177, 177, 177);
+    margin: 4px 0;
+    padding: 5px 20px;
+}
 
-
-
-
-
-
-
-
-
+.lens input
+{
+    padding: 5px 20px;
+    width: 80%;
+}
 
 
 
