@@ -240,7 +240,10 @@ i
 
 .conversazione
 {
-    background-image: url(../img/mine.jpg);
+    background-image: url(../img/mine3.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: calc(100vh - 140px);
     overflow-y: scroll;
 }
