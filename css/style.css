@@ -29,6 +29,13 @@ body
 }
 
 
+li
+{
+    text-decoration: none;
+    list-style: none;
+}
+
+
 
 /*! ASIDE SX */
 .aside-sx
@@ -78,6 +85,9 @@ body
 
 /*! MAIN */
 
+
+/*! NOTIFICHE */
+
 .notifiche
 {
     background: rgb(138, 211, 241);
@@ -108,41 +118,71 @@ body
     flex-wrap: wrap;
 }
 
+
+
+
+
+/*! SEARCH */
+
+
 .search
 {
     height: 50px;
     background-color: rgb(250, 250, 250);
 }
 
-.lens
-{
-    padding: 5px;
-    width: 90%;
-}
-
-.lens i
+.search i
 {
     font-size: 20px;
     border: 1px solid rgb(212, 212, 212);
     color: rgb(177, 177, 177);
-    margin: 4px 0;
-    padding: 5px 20px;
+    margin: 4px;
+    padding: 8px 20px 12px 20px;
+    border-radius: 4px;
 }
 
-.lens input
+.search input {
+    width: 130px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 12px 20px 12px 20px;
+    width: 75%;
+    margin: 0 2px;
+}
+
+
+
+
+
+/*! CHAT */
+
+
+.chat
 {
-    padding: 5px 20px;
-    width: 80%;
+    overflow-y: scroll;
+    padding: 15px;
+    height: calc(100vh - 200px);
+    background-color: white;
 }
 
+.other-chat img
+{
+    width: 60px;
+    border-radius: 50%;
+    margin: 8px 0px 10px 0;
+}
 
+.other-chat
+{
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
 
-
-
-
-
-
-
+.other-chat p
+{
+    margin-left: 10px;
+    margin-top: 15px;
+}
 
 
 
@@ -156,5 +196,5 @@ body
 .debug .container
 {
     background-color: lightblue;
-    height: 500px;
+    height: 1000px;
 }
