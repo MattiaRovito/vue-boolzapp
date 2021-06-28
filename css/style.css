@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container
+{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*! ASIDE SX */
+.aside-sx
+{
+    width: 35%;
+    
+}
+
+
+
+/*! HEADER */
+.utente
+{
+    background-color: rgb(237, 237, 237);
+    height: 70px;
+    display: flex;
+    padding: 10px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+.logo
+{
+    flex-grow: 2;
+}
+
+.logo img
+{
+    float: left;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.logo p
+{
+    line-height: 50px;
+    margin-left: 5px;
+}
+
+.icon i
+{
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0 5px;
+    color: rgb(177, 177, 177);
+}
+
+
+
+/*! MAIN */
+
+.notifiche
+{
+    background: rgb(138, 211, 241);
+    height: 80px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.notifiche i
+{
+    font-size: 30px;
+    background-color: #f2fbff;
+    border-radius: 50%;
+    color: rgb(138, 211, 241);
+    padding: 12px;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! DEBUG */
+
+.debug .container
+{
+    background-color: lightblue;
+    height: 500px;
+}
