@@ -35,6 +35,10 @@ li
     list-style: none;
 }
 
+i
+{
+    color: rgb(177, 177, 177);
+}
 
 
 /*! ASIDE SX */
@@ -78,7 +82,7 @@ li
     line-height: 50px;
     font-size: 18px;
     margin: 0 5px;
-    color: rgb(177, 177, 177);
+    
 }
 
 
@@ -141,7 +145,7 @@ li
     border-radius: 4px;
 }
 
-.search input {
+.search input, .send input {
     width: 130px;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 4px;
@@ -214,7 +218,7 @@ li
 
 .chat-principale i:last-child
 {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .chat-logo img
@@ -248,16 +252,30 @@ li
 
 /*! FOOTER */
 
-.aside-dx footer
+.send
 {
     height: 70px;
     background-color: rgb(243, 238, 234);
 }
 
+.send i
+{
+    padding: 20px 10px;
+    font-size: 26px;
+}
 
+.send i:hover
+{
+    color: lightblue;
+    cursor: pointer;
+}
 
-
-
+.send input
+{
+    margin-top: 10px;
+    height: 70%;
+    width: 86%;
+}
 
 
 
