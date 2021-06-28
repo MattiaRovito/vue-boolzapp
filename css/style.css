@@ -41,7 +41,7 @@ li
 .aside-sx
 {
     width: 35%;
-    
+    float: left;
 }
 
 
@@ -55,7 +55,7 @@ li
     border-right: 1px solid rgb(204, 204, 204);
 }
 
-.logo
+.logo, .chat-logo
 {
     flex-grow: 2;
 }
@@ -188,6 +188,48 @@ li
 
 
 
+/*! ASIDE-DX */
+
+.aside-dx
+{
+    width: calc(100% - 35%);
+    float: left;
+}
+
+
+
+/*! CHAT PRINCIPALE */
+
+.chat-principale
+{
+    background-color: rgb(237, 237, 237);
+    height: 70px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+.chat-principale i
+{
+    margin-top: 10px;
+}
+
+
+.chat-principale i:last-child
+{
+    margin-right: 10px;
+}
+
+.chat-logo img
+{
+    float: left;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.chat-logo p
+{
+    line-height: 40px;
+}
 
 
 

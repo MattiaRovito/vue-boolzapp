@@ -27,7 +27,7 @@
         <div id="app" class="container">
     
             <!--? aside sinistra -->
-            <aside class="aside-sx">
+            <aside class="aside-sx clearfix">
 
                 <!--? header -->
                 <header class="utente flex">
@@ -75,22 +75,23 @@
                     <!--? chat -->
                     <div class="chat">
                         <ul>
-                            <li class="other-chat flex">
-                                <img src="img/avatar_4.jpg" alt="Logo">
-                                <p>Giangi</p> 
+                            <li class="other-chat flex" v-for="item in contacts">
+                                {{item.name}}
+                                <!-- <img src="img/avatar_4.jpg" alt="Logo">
+                                <p>Giangi</p>  -->
                             </li>
-                            <li class="other-chat flex">
+                            <!-- <li class="other-chat flex">
                                 <img src="img/avatar_5.jpg" alt="Logo">
-                                <p>Giangi</p> 
+                                <p>Eddie</p> 
                             </li>
                             <li class="other-chat flex">
                                 <img src="img/avatar_2.jpg" alt="Logo">
-                                <p>Giangi</p> 
+                                <p>Rocky</p> 
                             </li>
                             <li class="other-chat flex">
                                 <img src="img/avatar_1.jpg" alt="Logo">
-                                <p>Giangi</p> 
-                            </li>
+                                <p>Michael</p> 
+                            </li> -->
                         </ul>
                     </div>
                     <!--? /chat -->
@@ -108,7 +109,38 @@
             <!--? aside destra -->
             <aside class="aside-dx clearfix">
 
-            
+                <!--? header -->
+                <header class="chat-principale flex">
+                   
+                        <div class="chat-logo clearfix">
+                            <img src="img/avatar_7.jpg" alt="Logo">
+                            <p>Michele</p> 
+                        </div>
+    
+                        <div class="icon">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+
+                </header>
+                <!--? /header -->
+
+
+                <!--? main -->
+                <main>
+
+                </main>
+                <!--? /main -->
+
+
+
+
+                <!--? footer -->
+                <footer>
+
+                </footer>
+                <!--? /footer -->
 
             </aside>
             <!--? /aside destra -->
