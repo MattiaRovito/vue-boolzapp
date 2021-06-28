@@ -204,7 +204,6 @@ li
 {
     background-color: rgb(237, 237, 237);
     height: 70px;
-    border-right: 1px solid rgb(204, 204, 204);
 }
 
 .chat-principale i
@@ -233,10 +232,34 @@ li
 
 
 
+/*! MAIN */
+
+.conversazione
+{
+    background-image: url(../img/mine.jpg);
+    height: calc(100vh - 140px);
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+/*! FOOTER */
+
+.aside-dx footer
+{
+    height: 70px;
+    background-color: rgb(243, 238, 234);
+}
+
+
+
+
+
+
+
+
 /*! DEBUG */
 
-.debug .container
-{
-    background-color: lightblue;
-    height: 1000px;
-}
