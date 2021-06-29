@@ -117,12 +117,15 @@
                 <!--? main -->
                 <main class="conversazione">
                     <div class="row justify-end">
-                        <span class="speech-bubble send-box" v-for="item in messages">{{item.messages}}
+                        <span class="speech-bubble send-box" v-for="item in messages">
+                            {{item.text}}
                         </span>
+                        
                     </div>
                     <div class="row">
                         <span class="speech-bubble received-box row">Prova</span>
                     </div>
+               
                     
 
                 </main>
