@@ -116,18 +116,38 @@
 
                 <!--? main -->
                 <main class="conversazione">
-                    <div class="row justify-end">
-                        <span class="speech-bubble send-box" v-for="item in messages">
-                            {{item.text}}
-                        </span>
+                    
+                    <div v-for="(item, index) in contacts" v-if="item.visible==true">
+
+                        <div class="row justify-end" v-for="(itemMsg, indexMsg) in item.messages">
+                            <div class="speech-bubble send-box">
+                                <div v-if="itemMsg.status =='sent'">
+                                    <span>{{itemMsg.text}}</span>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+
+                        <div class="row" v-for="(itemMsg, indexMsg) in item.messages">
+                            <div class="speech-bubble received-box">
+                                <div v-if="itemMsg.status =='received'">
+                                    <span>{{itemMsg.text}}</span>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+
                         
                     </div>
-                    <div class="row">
-                        <span class="speech-bubble received-box row">Prova</span>
-                    </div>
-               
+                
+
                     
 
+                   
                 </main>
                 <!--? /main -->
 
