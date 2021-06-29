@@ -117,45 +117,23 @@
 
                 <!--? main -->
                 <main class="conversazione">
-                    
-                    <div v-for="(item, index) in contacts[counter]" v-if="item.visible==true">
+           
+                    <div class="speech-bubble">
+                        <div v-for="(item, index) in contacts[counter].messages" :class="(item.status == 'sent') ? 'send-box ' : 'received-box'">
 
-                        <div class="row justify-end" v-for="(itemMsg, indexMsg) in item.messages">
-                            <div class="speech-bubble send-box">
-                                <div v-if="itemMsg.status =='sent'">
-                                    <div>{{itemMsg.text}}</div>
-                                    <div class="time row justify-end">{{itemMsg.date}}</div>
-                                    <div class="arrow-position">
-                                        <i id="arrow" class="fas fa-chevron-down"></i>
-                                    </div>
-                                </div>
+                            <div class="row justify-end">{{item.text}}
+                                
                             </div>
+                            <div class="time">{{item.date}}</div>
                         </div>
-
-
-                        <div class="row" v-for="(itemMsg, indexMsg) in item.messages">
-                            <div class="speech-bubble received-box">
-                                <div v-if="itemMsg.status =='received'">
-                                    <div>{{itemMsg.text}}</div>
-                                    <div class="time row justify-end">{{itemMsg.date}}</div>
-                                    <div class="arrow-position">
-                                        <i id="arrow" class="fas fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        
                     </div>
-                
-
+                    <!--TODO DA CORREGGERE QUESTA PARTE -->
                    
                 </main>
                 <!--? /main -->
 
 
-
+                <!-- :class="(item.status == 'received') ? 'mess-inviati' : 'mess-ricevuti'" -->
 
                 <!--? footer -->
                 <footer class="send flex">

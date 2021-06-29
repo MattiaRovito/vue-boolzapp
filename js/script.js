@@ -202,7 +202,11 @@ const app = new Vue ({
     },
     
     methods : {
-
+        
+        contact: function(index){
+            this.counter = index;
+            console.log(index);
+        }
     }
 
 });
