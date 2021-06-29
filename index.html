@@ -71,11 +71,11 @@
                     </div>
                     <!--? search -->
 
-                    
+
                     <!--? chat -->
                     <div class="chat">
                         <ul>
-                            <li class="other-chat flex" v-for="item in contacts">
+                            <li class="other-chat flex" v-for="(item, index) in contacts" @click="contact(index)">
                                 <img :src=" 'img/avatar' + item.avatar +'.jpg'" alt="">
                                 <p>{{item.name}}</p> 
                             </li>
@@ -99,11 +99,21 @@
                 <!--? header -->
                 <header class="chat-principale flex">
                    
-                        <div class="chat-logo clearfix">
+                    <div class="chat-logo clearfix">
+                        <img :src="contacts[counter].avatar" alt="">
+                        <div class="text-utente">
+                            <h4>{{contacts[counter].name}}</h4>
+                            <span>Ultimo accesso oggi alle</span>
+                        </div>         
+                    </div>
+                    <!--TODO DA MODIFICARE ANCHE QUESTA PARTE -->
+
+
+                        <!-- <div class="chat-logo clearfix">
                             <img src="img/avatar_4.jpg" alt="Logo">
                             <p>Giangi</p> 
                             
-                        </div>
+                        </div> -->
     
                         <div class="icon">
                             <i class="fas fa-search"></i>
