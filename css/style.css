@@ -240,17 +240,37 @@ i
 
 .conversazione
 {
-    background-image: url(../img/mine3.jpg);
-    opacity: 0.8;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/mine.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     height: calc(100vh - 140px);
     overflow-y: scroll;
 }
 
 
 
+.speech-bubble
+{
+    
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: block;
+    width: 20%;
+} 
 
+
+.send-box
+{
+    background-color: rgb(178, 241, 178);
+    border: 1px solid rgb(153, 238, 153);
+   
+}
+
+.received-box
+{
+    background-color: white;
+    border: 1px solid lightgray;
+}
 
 
 /*! FOOTER */
@@ -277,7 +297,7 @@ i
 {
     margin-top: 10px;
     height: 70%;
-    width: 86%;
+    width: 80%;
 }
 
 

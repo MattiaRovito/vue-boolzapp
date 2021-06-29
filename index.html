@@ -76,22 +76,9 @@
                     <div class="chat">
                         <ul>
                             <li class="other-chat flex" v-for="item in contacts">
-                                {{item.name}}
-                                <!-- <img src="img/avatar_4.jpg" alt="Logo">
-                                <p>Giangi</p>  -->
+                                <img :src=" 'img/avatar' + item.avatar +'.jpg'" alt="">
+                                <p>{{item.name}}</p> 
                             </li>
-                            <!-- <li class="other-chat flex">
-                                <img src="img/avatar_5.jpg" alt="Logo">
-                                <p>Eddie</p> 
-                            </li>
-                            <li class="other-chat flex">
-                                <img src="img/avatar_2.jpg" alt="Logo">
-                                <p>Rocky</p> 
-                            </li>
-                            <li class="other-chat flex">
-                                <img src="img/avatar_1.jpg" alt="Logo">
-                                <p>Michael</p> 
-                            </li> -->
                         </ul>
                     </div>
                     <!--? /chat -->
@@ -129,7 +116,10 @@
 
                 <!--? main -->
                 <main class="conversazione">
-                    
+
+                    <span class="speech-bubble send-box">Prova</span>
+                    <span class="speech-bubble received-box">Prova</span>
+
                 </main>
                 <!--? /main -->
 
@@ -138,8 +128,9 @@
 
                 <!--? footer -->
                 <footer class="send flex">
-                    <i class="far fa-smile"></i>
+                    <i class="fas fa-smile"></i>
                     <input type="text" name="send" placeholder="Scrivi un messaggio">
+                    <i class="fas fa-paper-plane"></i>
                     <i class="fas fa-microphone"></i>
                     
                 </footer>
