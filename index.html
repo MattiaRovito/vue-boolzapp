@@ -118,18 +118,18 @@
                 <!--? main -->
                 <main class="conversazione">
                     
-                    <div v-for="(item, index) in contacts" v-if="item.visible==true">
+                    <div v-for="(item, index) in contacts[counter]" v-if="item.visible==true">
 
                         <div class="row justify-end" v-for="(itemMsg, indexMsg) in item.messages">
                             <div class="speech-bubble send-box">
                                 <div v-if="itemMsg.status =='sent'">
                                     <div>{{itemMsg.text}}</div>
-                                    <div class="time row justify-end">Ultimo accesso alle {{itemMsg.date}}</div>
-                                    <div class="arrow-position"><i id="arrow" class="fas fa-chevron-down"></i></div>
+                                    <div class="time row justify-end">{{itemMsg.date}}</div>
+                                    <div class="arrow-position">
+                                        <i id="arrow" class="fas fa-chevron-down"></i>
+                                    </div>
                                 </div>
                             </div>
-                            
-
                         </div>
 
 
@@ -137,8 +137,10 @@
                             <div class="speech-bubble received-box">
                                 <div v-if="itemMsg.status =='received'">
                                     <div>{{itemMsg.text}}</div>
-                                    <div class="time row justify-end">Ultimo accesso alle {{itemMsg.date}}</div>
-                                    <div class="arrow-position"><i id="arrow" class="fas fa-chevron-down"></i></div>
+                                    <div class="time row justify-end">{{itemMsg.date}}</div>
+                                    <div class="arrow-position">
+                                        <i id="arrow" class="fas fa-chevron-down"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -147,8 +149,6 @@
                         
                     </div>
                 
-
-                    
 
                    
                 </main>
