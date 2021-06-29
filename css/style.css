@@ -171,6 +171,12 @@ i
     background-color: white;
 }
 
+.chat ul li:hover
+{
+    background-color: rgb(248, 246, 246);
+    cursor: pointer;
+}
+
 .other-chat img
 {
     width: 60px;
@@ -242,8 +248,6 @@ i
 .conversazione
 {
     background-image: url(../img/mine.jpg);
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     height: calc(100vh - 140px);
     overflow-y: scroll;
 }
@@ -257,20 +261,32 @@ i
     padding: 5px 10px;
     display: block;
     width: 20%;
+    margin: 5px 15px 2px 10px;
 } 
 
+.row 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-end
+{
+    justify-content: flex-end;
+}
 
 .send-box
 {
     background-color: rgb(178, 241, 178);
     border: 1px solid rgb(153, 238, 153);
+    
    
 }
 
 .received-box
 {
-    background-color: white;
-    border: 1px solid lightgray;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(211, 211, 211);
 }
 
 

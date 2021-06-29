@@ -100,8 +100,8 @@
                 <header class="chat-principale flex">
                    
                         <div class="chat-logo clearfix">
-                            <img src="img/avatar_7.jpg" alt="Logo">
-                            <p>Michele</p> 
+                            <img src="img/avatar_4.jpg" alt="Logo">
+                            <p>Giangi</p> 
                         </div>
     
                         <div class="icon">
@@ -116,10 +116,14 @@
 
                 <!--? main -->
                 <main class="conversazione">
-
-                    <span class="speech-bubble send-box">Prova
-                    </span>
-                    <span class="speech-bubble received-box">Prova</span>
+                    <div class="row justify-end">
+                        <span class="speech-bubble send-box" v-for="item in messages">{{item.messages}}
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="speech-bubble received-box row">Prova</span>
+                    </div>
+                    
 
                 </main>
                 <!--? /main -->
