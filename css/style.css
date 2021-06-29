@@ -258,11 +258,11 @@ i
 {
     
     border-radius: 10px;
-    padding: 12px 10px;
+    padding: 6px 10px;
     display: block;
     width: 35%;
     margin: 5px 15px 2px 10px;
-    font-size: 14px;
+    font-size: 16px;
 } 
 
 .row 
@@ -279,9 +279,7 @@ i
 .send-box
 {
     background-color: rgb(178, 241, 178);
-    border: 1px solid rgb(153, 238, 153);
-    
-   
+    border: 1px solid rgb(153, 238, 153); 
 }
 
 .received-box
@@ -290,6 +288,32 @@ i
     border: 1px solid rgb(211, 211, 211);
 }
 
+
+.time
+{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.arrow-position
+{
+    position: relative;
+}
+
+#arrow
+{
+    position: absolute;
+    bottom: 25px;
+    right: 5px;
+    font-size: 12px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.speech-bubble:hover #arrow
+{
+    opacity: 1;
+}
 
 /*! FOOTER */
 

@@ -122,7 +122,9 @@
                         <div class="row justify-end" v-for="(itemMsg, indexMsg) in item.messages">
                             <div class="speech-bubble send-box">
                                 <div v-if="itemMsg.status =='sent'">
-                                    <span>{{itemMsg.text}}</span>
+                                    <div>{{itemMsg.text}}</div>
+                                    <div class="time row justify-end">{{itemMsg.date}}</div>
+                                    <div class="arrow-position"><i id="arrow" class="fas fa-chevron-down"></i></div>
                                 </div>
                             </div>
                             
@@ -133,7 +135,9 @@
                         <div class="row" v-for="(itemMsg, indexMsg) in item.messages">
                             <div class="speech-bubble received-box">
                                 <div v-if="itemMsg.status =='received'">
-                                    <span>{{itemMsg.text}}</span>
+                                    <div>{{itemMsg.text}}</div>
+                                    <div class="time row justify-end">{{itemMsg.date}}</div>
+                                    <div class="arrow-position"><i id="arrow" class="fas fa-chevron-down"></i></div>
                                 </div>
                             </div>
                             
