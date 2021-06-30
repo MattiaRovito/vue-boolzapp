@@ -250,6 +250,7 @@ i
     background-image: url(../img/mine.jpg);
     height: calc(100vh - 140px);
     overflow-y: scroll;
+    padding: 20px;
 }
 
 
@@ -293,6 +294,8 @@ i
 {
     font-size: 12px;
     margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .arrow-position
