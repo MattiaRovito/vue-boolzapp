@@ -50,6 +50,20 @@ i
 }
 
 
+.text-utente
+{
+    margin-top: 10px;
+}
+
+.accesso
+{
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
 
 /*! HEADER */
 .utente
