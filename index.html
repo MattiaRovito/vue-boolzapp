@@ -128,12 +128,10 @@
                 <!--? main -->
                 <main class="conversazione">
            
-                    <div class="speech-bubble">
-                        <div v-for="(item, index) in contacts[counter].messages" :class="(item.status == 'sent') ? 'send-box ' : 'received-box'">
+                    <div class="">
+                        <div v-for="(item, index) in contacts[counter].messages" :class="(item.status == 'sent') ? 'send-box speech-bubble row' : 'received-box speech-bubble'">
 
-                            <div class="row justify-end">{{item.text}}
-                                
-                            </div>
+                            <div>{{item.text}}</div>
                             <div class="time">{{item.date}}</div>
                         </div>
                     </div>
