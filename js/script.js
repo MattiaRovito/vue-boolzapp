@@ -30,6 +30,7 @@ const app = new Vue ({
 
     data : {
         newMessage : '',
+        search : '',
         counter : 0,
         contacts: [
             {
@@ -235,6 +236,12 @@ const app = new Vue ({
                 this.contacts[this.counter].messages.push(nuovaRisposta)
             }, 1000);
         },
+        computed : {
+            ricerca(){
+                return this.contacts.filter((searchBar) =>{
+                    return searchBar
+                })
+            }
+        }
     }
-
 });
