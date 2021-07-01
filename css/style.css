@@ -22,6 +22,10 @@ body
     min-width: 950px;
     height: 100vh;
     margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 140px;
 }
 
 .flex
@@ -41,6 +45,25 @@ i
     color: rgb(177, 177, 177);
 }
 
+.color
+{
+    position: relative;
+    z-index: -1;
+}
+.color-top
+{
+    background-color: #009688;
+    width: 100%; 
+    height: 100px;
+    
+}
+
+.color-bottom
+{
+    background-color: #d7dbd7;
+    width: 100%; 
+    height: calc(100vh - 100px)
+}
 
 /*! ASIDE SX */
 
