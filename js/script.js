@@ -236,14 +236,14 @@ const app = new Vue ({
                 this.contacts[this.counter].messages.push(nuovaRisposta)
             }, 1000);
         },
-    },
-    computed : {
         ricerca() {
-            return this.contacts.forEach((element) => {
-                if(this.contacts.visible == true){
-                    return element.name.toLowerCase().includes(this.search.toLowerCase())
-                }  
-            })
+            this.contacts.forEach((element) => {
+                if(element.name.toLowerCase().includes(this.search.toLowerCase())){
+                    element.visible = true;
+                } else{
+                    element.visible = false;
+                }
+            });   
         }
-    }
+    },
 });

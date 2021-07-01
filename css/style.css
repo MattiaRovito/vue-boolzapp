@@ -160,6 +160,7 @@ i
 {
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 
@@ -380,7 +381,12 @@ i
 {
     margin-top: 10px;
     height: 70%;
-    width: 80%;
+    width: 100%;
+}
+
+.send:last-child i
+{
+    margin-right: 15px;
 }
 
 .button
