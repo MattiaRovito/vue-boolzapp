@@ -19,6 +19,9 @@
     <!--* MY VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
+    <!--* DAY JS -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    
     <title>BoolzApp</title>
 </head>
 <body class="debug">
@@ -107,19 +110,12 @@
                         </div>
                     </div>
                   
-
-
-                        <!-- <div class="chat-logo clearfix">
-                            <img src="img/avatar_4.jpg" alt="Logo">
-                            <p>Giangi</p> 
-                            
-                        </div> -->
-    
-                        <div class="icon">
-                            <i class="fas fa-search"></i>
-                            <i class="fas fa-paperclip"></i>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                       
 
                 </header>
                 <!--? /header -->
@@ -131,15 +127,21 @@
                     <div v-for="(item, index) in contacts[counter].messages">
 
                         <div v-if="item.status =='sent'" class="row justify-end">
-                            <div class="speech-bubble send-box">
+                            <div class="speech-bubble send-box arrow-position">
                                 <div>{{item.text}}</div>
                                 <div class="time">{{item.date}}</div>
+                                <div id="arrow">
+                                    <i class="fas fa-sort-down"></i>
+                                </div> 
                             </div>
                         </div>
-                        <div class="row">
-                            <div v-if="item.status =='received'" class="speech-bubble received-box">
+                        <div class="row" v-if="item.status =='received'">
+                            <div  class="speech-bubble received-box arrow-position" >
                                 <div>{{item.text}}</div>
                                 <div class="time">{{item.date}}</div>
+                                <div id="arrow">
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,8 +154,9 @@
                 <!--? footer -->
                 <footer class="send flex">
                     <i class="fas fa-smile"></i>
-                    <input type="text" name="send" placeholder="Scrivi un messaggio">
-                    <i class="fas fa-paper-plane"></i>
+                    <input type="text" name="send" placeholder="Scrivi un messaggio" v-model="newMessage" @keyup.enter="pushToDo">
+                    <button class="button" @click="pushToDo"><i class="fas fa-paper-plane"></i></button>
+                    
                     <i class="fas fa-microphone"></i>
                     
                 </footer>

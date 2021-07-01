@@ -29,6 +29,7 @@ const app = new Vue ({
     el : "#app",
 
     data : {
+        newMessage : '',
         counter : 0,
         contacts: [
             {
@@ -204,7 +205,36 @@ const app = new Vue ({
         contact(index){
             this.counter = index;
             console.log(this.counter);
-        }
+        },
+        pushToDo(){
+
+           
+            if( this.newMessage == ''  )
+            {
+                return;
+            }
+           
+            const nuovoMessaggio = {
+                date : dayjs().format("DD/MM/YYYY HH:mm:ss"),
+                text : this.newMessage,
+                status : 'sent'
+            }
+            this.contacts[this.counter].messages.push(nuovoMessaggio)
+
+            this.newMessage = ""
+
+            // console.log(nuovoMessaggio);
+            // console.log(this.newMessage)
+
+            setTimeout(() => {
+                const nuovaRisposta = {
+                    date : dayjs().format("DD/MM/YYYY HH:mm:ss"),
+                    text : "Ok",
+                    status : 'received'
+                }
+                this.contacts[this.counter].messages.push(nuovaRisposta)
+            }, 1000);
+        },
     }
 
 });
